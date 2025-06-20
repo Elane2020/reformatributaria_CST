@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela CST-IBS/CBS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fff;
+    }
+
+    h2 {
+      color: #b30000;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #e60000;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #ffe6e6;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Tabela CST-IBS/CBS com Pesquisa</h2>
+  <input type="text" id="pesquisa" placeholder="Digite para pesquisar...">
+
+  <table id="tabelaCST">
+    <thead>
+      <tr>
+        <th>CST-IBS/CBS</th>
+        <th>Descrição</th>
+        <th>ind_gIBSCBS</th>
+        <th>ind_gIBSCBSMono</th>
+        <th>ind_gRed</th>
+        <th>ind_gDif</th>
+        <th>ind_gTransfCred</th>
+        <th>NFe</th>
+        <th>NFCe</th>
+        <th>CTe</th>
+        <th>CTeOS</th>
+        <th>BPe</th>
+        <th>BPeTM</th>
+        <th>NF3e</th>
+        <th>NFCom</th>
+        <th>NFSe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>000</td><td>Tributação integral</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td></tr>
+      <tr><td>010</td><td>Tributação com alíquotas uniformes</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td></tr>
+      <tr><td>011</td><td>Tributação com alíquotas uniformes reduzidas</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td></tr>
+      <tr><td>200</td><td>Alíquota reduzida</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td></tr>
+      <tr><td>210</td><td>Redução de alíquota com redutor de base de cálculo</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Sim</td></tr>
+      <tr><td>220</td><td>Alíquota fixa</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td></tr>
+      <tr><td>222</td><td>Redução de base de cálculo</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td></tr>
+      <tr><td>221</td><td>Alíquota fixa proporcional</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Sim</td></tr>
+      <tr><td>400</td><td>Isenção</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Sim</td><td>Não</td><td>Não</td><td>Sim</td></tr>
+      <tr><td>410</td><td>Imunidade e não incidência</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Sim</td></tr>
+      <tr><td>510</td><td>Diferimento</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>Sim</td><td>Sim</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Sim</td><td>Não</td><td>Sim</td></tr>
+      <tr><td>550</td><td>Suspensão</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Sim</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Sim</td><td>Não</td><td>Sim</td></tr>
+      <tr><td>620</td><td>Tributação monofásica</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>Sim</td><td>Sim</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td></tr>
+      <tr><td>800</td><td>Transferência de crédito</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>Sim</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td></tr>
+      <tr><td>810</td><td>Ajustes</td><td>?</td><td></td><td></td><td></td><td></td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td></tr>
+      <tr><td>820</td><td>Tributação em declaração de regime especí</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Sim</td></tr>
+      <tr><td>830</td><td>Exclusão de base de cálculo</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Não</td><td>Sim</td><td>Não</td><td>Não</td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var input = document.getElementById("pesquisa");
+      input.addEventListener("keyup", function () {
+        var filtro = input.value.toLowerCase();
+        var linhas = document.querySelectorAll("#tabelaCST tbody tr");
+
+        linhas.forEach(function (linha) {
+          var textoLinha = linha.textContent.toLowerCase();
+          linha.style.display = textoLinha.includes(filtro) ? "" : "none";
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
